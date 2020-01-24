@@ -2,7 +2,6 @@ import React from 'react';
 import logo from './assets/LogoLight.svg';
 import './App.css';
 
-import Button from './components/Button';
 import Hamburger from './components/Hamburger';
 
 function App() {
