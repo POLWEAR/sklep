@@ -21,7 +21,7 @@ const HamburgerWrapper = styled.div((props) => {
   margin: 30px;
   width: 30px;
   position: relative;
-  padding: 14px;
+  padding: 14px 0;
   display: inline-block;
   cursor: pointer;
   background-color: transparent;
@@ -29,7 +29,7 @@ const HamburgerWrapper = styled.div((props) => {
   margin: 0;
 
   .hamburger__box {
-    width: 50px;
+    width: 30px;
     height: 24px;
     display: inline-block;
     position: relative;
