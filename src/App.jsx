@@ -25,6 +25,9 @@ function App() {
           </Route>
         </Switch>
       </div>
+      <div style={{ margin: '50px auto', textAlign: 'center' }}>
+        POLWEAR 2020 (R)
+      </div>
     </Router>
   );
 }
