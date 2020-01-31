@@ -1,17 +1,27 @@
 import React from 'react';
-import logo from './assets/LogoLight.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
-import Hamburger from './components/Hamburger';
+import Home from './views/Home';
+import Cart from './views/Cart';
+
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Hamburger />
-        <img src={logo} alt="POLWEAR" height="50px" />
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/cart">
+            <Cart />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

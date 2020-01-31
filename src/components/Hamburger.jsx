@@ -84,8 +84,8 @@ const Hamburger = () => {
         className={active ? 'hamburger--active' : null}
         onClick={() => toggle(!active)}
       >
-        <span class="humburger__box">
-          <span class="hamburger__inner"></span>
+        <span className="humburger__box">
+          <span className="hamburger__inner"></span>
         </span>
       </HamburgerWrapper>
     </div>
