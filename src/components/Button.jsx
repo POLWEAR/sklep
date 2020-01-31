@@ -7,6 +7,7 @@ const ButtonWrapper = styled.button`
   color: white;
   padding: 10px;
   cursor: pointer;
+  width: 100%;
 
   font-family: 'Roboto', sans-serif;
   font-size: 18px;

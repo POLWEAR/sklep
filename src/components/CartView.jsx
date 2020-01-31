@@ -11,14 +11,14 @@ const CartView = ({ products }) => (
         <Product key={name} name={name} price={price} image={image} />
       ))
     ) : (
-      <>
+      <div style={{ margin: '0 30px' }}>
         <span style={{ display: 'block', margin: '20px' }}>
           Your cart is empty
         </span>
         <Link to="/">
           <Button>Go shopping</Button>
         </Link>
-      </>
+      </div>
     )}
   </>
 );
