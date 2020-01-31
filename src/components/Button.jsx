@@ -14,6 +14,18 @@ const ButtonWrapper = styled.button`
   font-weight: 500;
 `;
 
-const Button = ({ children }) => <ButtonWrapper>{children}</ButtonWrapper>;
+const DisabledButton = styled(ButtonWrapper)`
+  background: #aaaaaa;
+`;
+
+const Button = ({ children, disabled }) => (
+  <>
+    {disabled ? (
+      <DisabledButton disabled>{children}</DisabledButton>
+    ) : (
+      <ButtonWrapper>{children}</ButtonWrapper>
+    )}
+  </>
+);
 
 export default Button;

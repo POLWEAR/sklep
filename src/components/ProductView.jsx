@@ -15,7 +15,8 @@ const ProductView = ({ name, price, image, description }) => (
       <ProductName>{name}</ProductName>
       <ProductPrice>{price} PLN</ProductPrice>
       <span style={{ margin: '20px 0' }}>
-        <Button>Add to the cart</Button>
+        <p style={{ fontSize: '0.7rem' }}>Towar niedostępny</p>
+        <Button disabled>Add to the cart</Button>
       </span>
       <p style={{ fontSize: '1rem' }}>{description}</p>
     </ProductDescription>
