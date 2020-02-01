@@ -12,6 +12,7 @@ const Product = () => {
   return (
     <div>
       <ProductView
+        id={id}
         name={name}
         price={price}
         image={image}

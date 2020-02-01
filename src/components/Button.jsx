@@ -18,12 +18,12 @@ const DisabledButton = styled(ButtonWrapper)`
   background: #aaaaaa;
 `;
 
-const Button = ({ children, disabled }) => (
+const Button = ({ onClick, children, disabled }) => (
   <>
     {disabled ? (
       <DisabledButton disabled>{children}</DisabledButton>
     ) : (
-      <ButtonWrapper>{children}</ButtonWrapper>
+      <ButtonWrapper onClick={onClick}>{children}</ButtonWrapper>
     )}
   </>
 );
