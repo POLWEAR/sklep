@@ -9,13 +9,13 @@ const mapProductsToProps = (state) => ({
   products: state.cart,
 });
 
-const isEmpty = (cart) => !cart || cart === [];
+const isEmpty = (cart) => cart === [];
 
 const CartView = ({ products }) => {
   console.log(products);
   return (
     <>
-      {products ? (
+      {isEmpty(products) ? (
         products.map(({ name, price, image }, index) => (
           <Product key={index} name={name} price={price} image={image} />
         ))
