@@ -17,7 +17,7 @@ const ProductView = ({ id, name, price, image, description, dispatch }) => (
       <ProductName>{name}</ProductName>
       <ProductPrice>{price} PLN</ProductPrice>
       <span style={{ margin: '20px 0' }}>
-        <p style={{ fontSize: '0.7rem' }}>Towar niedostępny</p>
+        {/*<p style={{ fontSize: '0.7rem' }}>Towar niedostępny</p>*/}
         <Button onClick={(e) => dispatch(addToCart(id))}>
           Add to the cart
         </Button>
