@@ -3,10 +3,9 @@ import persistState from 'redux-localstorage';
 
 import cart from './reducers';
 
-const persist = compose(
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-  persistState()
-);
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const persist = composeEnhancers(persistState());
 
 const store = createStore(cart, persist);
 
