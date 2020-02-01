@@ -19,4 +19,10 @@ export default [
     description:
       'Oficjalna bluza upamiętniająca jedno z najwspanialszych zwycięstw Polski.',
   },
+  {
+    name: 'Obudowa na telefon HUSARIA',
+    price: 50,
+    image: require('./assets/obudowa.png'),
+    description: 'Gumowa budowa z naszym logo.',
+  },
 ];

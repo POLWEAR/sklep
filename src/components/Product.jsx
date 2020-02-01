@@ -28,7 +28,7 @@ export const ProductPrice = styled.span`
 
 const Product = ({ name, image, price }) => (
   <ProductWrapper>
-    <img src={image} alt={name} />
+    <img src={image} alt={name} style={{ maxHeight: '40vh' }} />
     <ProductDescription>
       <ProductName>{name}</ProductName>
       <ProductPrice>{price} PLN</ProductPrice>

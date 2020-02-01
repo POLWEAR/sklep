@@ -9,7 +9,7 @@ const mapProductsToProps = (state) => ({
   products: state.cart,
 });
 
-const isEmpty = (cart) => cart === [];
+const isEmpty = (cart) => !!cart.length;
 
 const CartView = ({ products }) => {
   console.log(products);
